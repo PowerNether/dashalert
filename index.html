@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/selectric.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="dashalert">
+    <!-- <div class="dashalert">
         <div class="dashalert__header">
             <p class="dashalert__title">Уведомления</p>
             <div class="dashalert__menu">
@@ -71,7 +73,178 @@
         <div class="dashalert__footer">
             <a href="#" class="dashalert__more">Показать больше</a>
         </div>
+    </div> -->
+    <div class="dashcalert">
+        <p class="dashcalert__title">Центр уведомлений</p>
+        <div class="dashcat__filter dashcalert__filters">
+            <div class="objects__filter">
+                <div class="filter-objects__row">
+                    <div class="filter-objects__select alert">
+                        <span class="title">Уведомления</span>
+                        <span class="amount">1</span>
+                        <select multiple>
+                            <option value="placeholder" class="placeholder">Уведомления</option>
+                            <option value="1">Подписки</option>
+                            <option value="2">Жалобы</option>
+                        </select>
+                    </div>
+                    <div class="filter-objects__select type">
+                        <span class="title">Тип</span>
+                        <select>
+                            <option value="placeholder" class="placeholder">Тип</option>
+                            <option value="1">Ответ техподдержки</option>
+                            <option value="2">Загород</option>
+                        </select>
+                    </div>
+                    <div class="filter-objects__checkblock">
+                        <input type="checkbox" name="exclusive">
+                        <span>Только непрочитанные</span>
+                    </div>
+                    <div class="filter-objects__radios">
+                        <div class="filter-objects__radio">
+                            <input type="radio" name="date">
+                            <span>день</span>
+                        </div>
+                        <div class="filter-objects__radio">
+                            <input type="radio" name="date">
+                            <span>неделя</span>
+                        </div>
+                        <div class="filter-objects__radio">
+                            <input type="radio" name="date">
+                            <span>мес.</span>
+                        </div>
+                        <div class="filter-objects__radio">
+                            <input type="radio" name="date">
+                            <span>3 мес.</span>
+                        </div>
+                        <div class="filter-objects__radio">
+                            <input type="radio" name="date">
+                            <span>все время</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashcalert__list">
+            <div class="dashcalert__header">
+                <p class="header-dashcalert__title">Найдено 3 уведомления</p>
+                <p class="header-dashcalert__toggler">Отметить всё как прочитанное</p>
+            </div>
+            <div class="dashcalert__item">
+                <span class="item-dashcalert__watch"></span>
+                <div class="item-dashcalert__content">
+                    <p class="item-dashcalert__title">Новые объявления</p>
+                    <p class="item-dashcalert__text">
+                        В запросе Купить 1, 2, 3, 4, 5-комнатную квартиру, 
+                        квартиру-студию, квартиру свободной планировки, 
+                        многокомнатную квартиру в Москве и др.
+                    </p>
+                    <div class="item-dashcalert__footer">
+                        <p class="item-dashcalert__text">
+                            2 минуты назад
+                        </p>
+                        <span class="item-dashcalert__divider"></span>
+                        <p class="item-dashcalert__text">
+                            Подписки
+                        </p>
+                    </div>
+                </div>
+                <div class="item-dashcalert__images">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                </div>
+                <div class="item-dashcalert__edit">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="dashcalert__item">
+                <span class="item-dashcalert__watch"></span>
+                <div class="item-dashcalert__content">
+                    <p class="item-dashcalert__title">Новые объявления</p>
+                    <p class="item-dashcalert__text">
+                        В запросе Купить 1, 2, 3, 4, 5-комнатную квартиру, 
+                        квартиру-студию, квартиру свободной планировки, 
+                        многокомнатную квартиру в Москве и др.
+                    </p>
+                    <div class="item-dashcalert__footer">
+                        <p class="item-dashcalert__text">
+                            2 минуты назад
+                        </p>
+                        <span class="item-dashcalert__divider"></span>
+                        <p class="item-dashcalert__text">
+                            Подписки
+                        </p>
+                    </div>
+                </div>
+                <div class="item-dashcalert__images">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                    <img src="./image/img.png" alt="1" class="item-dashcalert__image">
+                </div>
+                <div class="item-dashcalert__edit">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="dashcalert__item">
+                <span class="item-dashcalert__watch hidden"></span>
+                <div class="item-dashcalert__content">
+                    <p class="item-dashcalert__title">Новые объявления</p>
+                    <p class="item-dashcalert__text">
+                        В запросе Купить 1, 2, 3, 4, 5-комнатную квартиру, 
+                        квартиру-студию, квартиру свободной планировки, 
+                        многокомнатную квартиру в Москве и др.
+                    </p>
+                    <div class="item-dashcalert__footer">
+                        <p class="item-dashcalert__text">
+                            2 минуты назад
+                        </p>
+                        <span class="item-dashcalert__divider"></span>
+                        <p class="item-dashcalert__text">
+                            Подписки
+                        </p>
+                    </div>
+                </div>
+                <div class="item-dashcalert__edit">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="dashcalert__item">
+                <span class="item-dashcalert__watch hidden"></span>
+                <div class="item-dashcalert__content">
+                    <p class="item-dashcalert__title">Новые объявления</p>
+                    <p class="item-dashcalert__text">
+                        В запросе Купить 1, 2, 3, 4, 5-комнатную квартиру, 
+                        квартиру-студию, квартиру свободной планировки, 
+                        многокомнатную квартиру в Москве и др.
+                    </p>
+                    <div class="item-dashcalert__footer">
+                        <p class="item-dashcalert__text">
+                            2 минуты назад
+                        </p>
+                        <span class="item-dashcalert__divider"></span>
+                        <p class="item-dashcalert__text">
+                            Подписки
+                        </p>
+                    </div>
+                    <div class="item-dashcalert__controls">
+                        <button class="item-dashcalert__btn item-dashcalert__dark">Оплатить</button>
+                        <button class="item-dashcalert__btn item-dashcalert__light">Продлить</button>
+                    </div>
+                </div>
+                <div class="item-dashcalert__edit">
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+        <button class="dashcalert__more">Показать больше</button>
     </div>
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/jquery.selectric.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
